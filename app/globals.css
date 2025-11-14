@@ -1,3 +1,4 @@
+/* stylelint-disable at-rule-no-unknown */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
@@ -86,36 +87,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Interactive blurred gradient background */
-.interactive-bg {
-  pointer-events: none;
-  will-change: background-position;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* layered radial gradients that respond to --bg-x / --bg-y */
-  background-image:
-    radial-gradient(800px circle at var(--bg-x) var(--bg-y), 
-      rgba(66, 48, 128, 0.4), 
-      transparent 40%
-    ),
-    radial-gradient(600px circle at calc(var(--bg-x) + 20%) calc(var(--bg-y) - 15%), 
-      rgba(59, 82, 128, 0.35), 
-      transparent 35%
-    ),
-    radial-gradient(900px circle at calc(var(--bg-x) - 20%) calc(var(--bg-y) + 15%), 
-      rgba(34, 21, 89, 0.3), 
-      transparent 45%
-    );
-  filter: blur(48px) saturate(140%);
+[data-scroll-container] {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   transform: translateZ(0);
-  transition: opacity 400ms ease;
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
-@media (max-width: 768px) {
-  .interactive-bg {
-    background-image:
-      radial-gradient(360px circle at var(--bg-x) var(--bg-y), rgba(99,102,241,0.14), transparent 30%),
-      radial-gradient(260px circle at calc(var(--bg-x) + 18%) calc(var(--bg-y) - 10%), rgba(168,85,247,0.12), transparent 28%);
-    filter: blur(28px) saturate(110%);
-  }
+section {
+  transform: translateZ(0);
+  will-change: transform;
+  contain: layout style paint;
 }
+
+button {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/* stylelint-enable at-rule-no-unknown */

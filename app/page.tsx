@@ -1,11 +1,14 @@
+'use client'
+
 import { useState } from 'react';
+
+import { Shader, ChromaFlow, Swirl } from "shaders/react"
 import { CustomCursor } from './components/CustomCursor';
-import Background from './components/Background';
 import { HomePage } from './components/HomePage';
 import LoadingScreen from './components/LoadingScreen';
 import { AnimatePresence } from 'framer-motion';
 
-function App() {
+export default function Page() {
   const [isLoading, setIsLoading] = useState(true);
 
   if (isLoading) {
@@ -14,8 +17,9 @@ function App() {
 
   return (
     <div className="cursor-none">
-      <Background />
+      {/* <GrainOverlay /> */}
       <CustomCursor />
+      
       <AnimatePresence mode="wait">
         <HomePage key="homepage" />
       </AnimatePresence>
@@ -23,4 +27,3 @@ function App() {
   );
 }
 
-export default App;

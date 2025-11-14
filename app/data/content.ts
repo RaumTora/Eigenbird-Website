@@ -52,15 +52,15 @@ export const featuredWork: WorkItem[] = [
     description: 'Exploring the intersection of typography and motion through real-time WebGL animations.',
     image: 'https://images.pexels.com/photos/3394310/pexels-photo-3394310.jpeg'
   },
-  {
-    id: 'generative-patterns',
-    number: '02',
-    title: 'Generative Patterns',
-    category: 'Visual System',
-    year: '2024',
-    description: 'Creating dynamic visual systems through algorithmic art and procedural generation.',
-    image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg'
-  },
+  // {
+  //   id: 'generative-patterns',
+  //   number: '02',
+  //   title: 'Generative Patterns',
+  //   category: 'Visual System',
+  //   year: '2024',
+  //   description: 'Creating dynamic visual systems through algorithmic art and procedural generation.',
+  //   image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg'
+  // },
   {
     id: 'spatial-interface',
     number: '03',
