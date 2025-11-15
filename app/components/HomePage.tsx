@@ -182,7 +182,10 @@ export const HomePage = () => {
         <header className="fixed top-0 left-0 right-0 z-40 p-8 md:p-12">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center justify-between">
-              <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight flex-shrink-0">
+              <h1
+                onClick={() => scrollToSection(0)}
+                className="text-2xl md:text-3xl font-bold text-white tracking-tight flex-shrink-0 cursor-pointer"
+              >
                 EIGENBIRD
               </h1>
               <div className="absolute left-1/2 transform -translate-x-1/2 hidden md:block">
@@ -234,7 +237,7 @@ export const HomePage = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 tracking-tighter text-huge">
+                    <h2 className="text-6xl md:text-4xl lg:text-9xl font-bold text-white mb-8 tracking-tighter ">
                       Creative
                       <br />
                       Exploration
@@ -332,7 +335,7 @@ export const HomePage = () => {
 
                       <div className="flex gap-6 text-gray-400 text-sm pt-6">
                         <a href="#" className="hover:text-white">Twitter</a>
-                        
+
                         <a href="#" className="hover:text-white">LinkedIn</a>
 
                       </div>
@@ -362,7 +365,7 @@ export const HomePage = () => {
 
           {/* Your scroll explorer (Unchanged) */}
           <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 text-white">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-1">
               <span className="text-xs tracking-widest">SCROLL TO EXPLORE</span>
               <motion.div
                 className="flex items-center"
@@ -398,6 +401,7 @@ export const HomePage = () => {
                 </motion.svg>
               </motion.div>
             </div>
+
           </div>
         </div>
       </motion.div>

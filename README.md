@@ -1,4 +1,4 @@
-# EigenBird Website
+# Eigenbird Website
 
 A modern, creative digital design studio website built with Next.js, React, and Framer Motion.
 
