@@ -364,45 +364,46 @@ export const HomePage = () => {
           </div>
 
           {/* Your scroll explorer (Unchanged) */}
-          <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 text-white">
-            <div className="flex items-center gap-1">
-              <span className="text-xs tracking-widest">SCROLL TO EXPLORE</span>
-              <motion.div
-                className="flex items-center"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-              >
-                <motion.svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="text-white"
-                >
-                  <motion.path
-                    d="M9 18L15 12L9 6"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    initial={{ x: 0 }}
-                    animate={{
-                      x: [0, 4, 0],
-                      opacity: [1, 0.5, 1],
-                    }}
-                    transition={{
-                      duration: 1.5,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    }}
-                  />
-                </motion.svg>
-              </motion.div>
-            </div>
-
-          </div>
+          {currentSection !== sections.length - 1 && (
+  <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 text-white">
+    <div className="flex items-center gap-1">
+      <span className="text-xs tracking-widest">SCROLL TO EXPLORE</span>
+      <motion.div
+        className="flex items-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        <motion.svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="text-white"
+        >
+          <motion.path
+            d="M9 18L15 12L9 6"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{ x: 0 }}
+            animate={{
+              x: [0, 4, 0],
+              opacity: [1, 0.5, 1],
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+        </motion.svg>
+      </motion.div>
+    </div>
+  </div>
+)}
         </div>
       </motion.div>
     </>
