@@ -45,11 +45,10 @@ export const DancingGirl = ({
 
         try {
           const three = await import('three')
-          const loaderMod = await import('three/examples/jsm/loaders/GLTFLoader')
-          // const controlsMod = await import('three/examples/jsm/controls/OrbitControls')
+          // @ts-ignore
+          const { GLTFLoader } = await import('three-stdlib/loaders/GLTFLoader')
           THREE = three
-          GLTFLoaderLocal = loaderMod.GLTFLoader
-          // OrbitControlsLocal = controlsMod.OrbitControls
+          GLTFLoaderLocal = GLTFLoader
           console.log('DancingGirl: using local three + jsm loaders')
         } catch (err) {
           console.warn('DancingGirl: dynamic import failed, falling back to CDN UMD', err)
