@@ -281,7 +281,6 @@ export const HomePage = () => {
                   {/* MOBILE */}
                   <div className="block md:hidden w-full min-h-screen px-6 pt-24 pb-12" style={{ maxWidth: 480, margin: '0 auto' }}>
                     <div className="mb-10">
-                      <h2 className="text-5xl font-bold text-white leading-tight tracking-tight mb-2">Let's<br />talk</h2>
                       <p className="text-gray-300 text-sm tracking-wide">/ Get in touch</p>
                     </div>
 
@@ -290,16 +289,9 @@ export const HomePage = () => {
                       <a href="mailto:hello@studio.com" className="text-white text-base">hello@studio.com</a>
                     </div>
 
-                    <div className="mb-8">
-                      <p className="text-gray-400 text-xs mb-1">Location</p>
-                      <p className="text-white text-base">New York, NY</p>
-                    </div>
-
                     <div className="flex gap-6 text-xs text-gray-400 mb-10">
                       <a href="#">Twitter</a>
-                      <a href="#">Instagram</a>
                       <a href="#">LinkedIn</a>
-                      <a href="#">Dribbble</a>
                     </div>
 
                     <form className="flex flex-col gap-6">
@@ -313,7 +305,7 @@ export const HomePage = () => {
                       </div>
                       <div>
                         <label className="text-gray-400 text-xs mb-1 block">Message</label>
-                        <textarea placeholder="Tell us about your project…" rows={4} className="w-full bg-transparent border-b border-gray-600 text-white py-2 text-sm resize-none"></textarea>
+                        <textarea placeholder="Tell us about your project…" rows={2} className="w-full bg-transparent border-b border-gray-600 text-white py-2 text-sm resize-none"></textarea>
                       </div>
                       <button type="submit" className="w-full bg-white text-black py-3 rounded-full text-sm font-semibold">Send Message</button>
                     </form>
@@ -340,9 +332,9 @@ export const HomePage = () => {
 
                       <div className="flex gap-6 text-gray-400 text-sm pt-6">
                         <a href="#" className="hover:text-white">Twitter</a>
-                        <a href="#" className="hover:text-white">Instagram</a>
+                        
                         <a href="#" className="hover:text-white">LinkedIn</a>
-                        <a href="#" className="hover:text-white">Dribbble</a>
+
                       </div>
                     </div>
 
@@ -357,7 +349,7 @@ export const HomePage = () => {
                       </div>
                       <div>
                         <label className="text-sm text-gray-400 mb-2 block">Message</label>
-                        <textarea rows={5} placeholder="Tell us about your project…" className="w-full bg-transparent border-b border-gray-600 text-white py-3 text-lg resize-none"></textarea>
+                        <textarea rows={3} placeholder="Tell us about your project…" className="w-full bg-transparent border-b border-gray-600 text-white py-3 text-lg resize-none"></textarea>
                       </div>
                       <button className="bg-white text-black font-semibold py-4 px-8 rounded-full text-lg">Send Message</button>
                     </form>
@@ -371,7 +363,7 @@ export const HomePage = () => {
           {/* Your scroll explorer (Unchanged) */}
           <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 text-white">
             <div className="flex items-center gap-4">
-              <span className="text-sm tracking-widest">SCROLL TO EXPLORE</span>
+              <span className="text-xs tracking-widest">SCROLL TO EXPLORE</span>
               <motion.div
                 className="flex items-center"
                 initial={{ opacity: 0 }}

@@ -70,7 +70,7 @@ export default function LoadingScreen({ onLoadingComplete }: { onLoadingComplete
                   ease: "easeInOut"
                 }}
               >
-                eigen
+                Eigen
               </motion.h1>
             </motion.div>
 

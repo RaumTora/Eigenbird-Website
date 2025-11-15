@@ -63,7 +63,7 @@ export const featuredWork: WorkItem[] = [
   // },
   {
     id: 'spatial-interface',
-    number: '03',
+    number: '02',
     title: 'Spatial Interface',
     category: '3D Navigation',
     year: '2024',

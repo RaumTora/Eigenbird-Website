@@ -12,7 +12,6 @@ export const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-xl text-gray-400 mb-2 tracking-widest">LET'S TALK</h2>
             <p className="text-gray-600 tracking-wide mb-12">/ Get in touch</p>
             
             <a 
@@ -21,11 +20,6 @@ export const Contact = () => {
             >
               hello@eigenbird.com
             </a>
-
-            <div className="mt-12 text-gray-400">
-              <p className="mb-2 font-medium">Location</p>
-              <p>San Francisco, CA</p>
-            </div>
 
             <div className="mt-12 flex gap-6">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
