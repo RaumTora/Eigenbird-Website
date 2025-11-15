@@ -8,6 +8,7 @@ import { ContactForm } from './ContactForm';
 import { MobileMenu } from './MobileMenu';
 import { featuredWork } from '../data/content';
 import { Shader, ChromaFlow, Swirl } from "shaders/react"
+import DancingGirl from './DancingGirl'
 
 export const HomePage = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -272,20 +273,44 @@ export const HomePage = () => {
             style={isMobile ? undefined : { width: 'max-content' }}
           >
             <Section anchor="HOME" isMobile={isMobile}>
-              <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8 }}
-              >
-                <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 tracking-tighter text-huge">
-                  Creative
-                  <br />
-                  Exploration
-                </h2>
-                <p className="text-lg md:text-xl text-gray-400 max-w-2xl">
-                  Digital design studio crafting immersive experiences
-                </p>
-              </motion.div>
+              {isMobile ? (
+                <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8 }}
+                >
+                  <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 tracking-tighter text-huge">
+                    Creative
+                    <br />
+                    Exploration
+                  </h2>
+                  <p className="text-lg md:text-xl text-gray-400 max-w-2xl">
+                    Digital design studio crafting immersive experiences
+                  </p>
+                </motion.div>
+              ) : (
+                <div className="grid grid-cols-2 items-center gap-12">
+                  <motion.div
+                    initial={{ y: 50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <h2 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white mb-8 tracking-tighter text-huge">
+                      Creative
+                      <br />
+                      Exploration
+                    </h2>
+                    <p className="text-lg md:text-xl text-gray-400 max-w-2xl">
+                      Digital design studio crafting immersive experiences
+                    </p>
+                  </motion.div>
+
+                  <div className="flex justify-end">
+                    {/* removed rounded border and reduced size by 75% (420 -> 105) as requested */}
+                    <DancingGirl targetWidth={420} targetHeight={420} />
+                  </div>
+                </div>
+              )}
             </Section>
 
             {featuredWork.map((work, index) => (
