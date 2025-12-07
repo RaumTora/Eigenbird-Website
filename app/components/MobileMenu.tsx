@@ -73,14 +73,14 @@ export const MobileMenu = ({ isOpen, onClose, sections, currentSection, onSectio
                     href="mailto:hello@eigenbird.com"
                     className="text-white text-xs font-semibold"
                   >
-                    hello@eigenbird.com
+                    comms@eigenbird.com
                   </a>
                   <div>
                           <p className="text-gray-400 mb-1 text-sm">Location</p>
-                          <p className="text-white text-xs font-semibold">New York, NY</p>
+                          <p className="text-white text-xs font-semibold">New Delhi, IN</p>
                         </div>
                   <div className="flex gap-4 pt-2">
-                    <a href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Twitter</a>
+                    <a href="https://x.com/eigenbird" className="text-xs text-gray-500 hover:text-white transition-colors">Twitter</a>
                     <a href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Instagram</a>
                     <a href="#" className="text-xs text-gray-500 hover:text-white transition-colors">LinkedIn</a>
                   </div>
