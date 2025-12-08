@@ -17,7 +17,7 @@ export const Footer = () => {
               href="mailto:hello@eigenbird.com" 
               className="text-xl md:text-2xl text-white hover:text-gray-300 transition-colors"
             >
-              hello@eigenbird.com
+              comms@eigenbird.com
             </a>
           </div>
           <div>

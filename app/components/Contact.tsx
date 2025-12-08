@@ -18,11 +18,11 @@ export const Contact = () => {
               href="mailto:hello@eigenbird.com"
               className="text-4xl md:text-5xl font-bold text-white hover:text-gray-300 transition-colors tracking-tight"
             >
-              hello@eigenbird.com
+              comms@eigenbird.com
             </a>
 
             <div className="mt-12 flex gap-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
+              <a href="https://x.com/eigenbird" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Dribbble</a>
