@@ -4,7 +4,7 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Eigenbird',
   description: 'Digital design studio crafting immersive experiences',
-}
+};
 
 export default function RootLayout({
   children,
@@ -13,6 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/logo.png" />
       <body>{children}</body>
     </html>
   )
