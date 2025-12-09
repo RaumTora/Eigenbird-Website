@@ -34,15 +34,15 @@ export const ContactForm = ({ variant = 'desktop' }: ContactFormProps) => {
       <div className="space-y-1">
         <p
           className={`text-white font-semibold leading-tight ${
-            isMobile ? 'text-2xl' : 'text-3xl md:text-4xl'
+            isMobile ? 'text-xl' : 'text-3xl md:text-4xl'
           }`}
         >
           Connect with us
         </p>
-        <p className="text-gray-400 text-xs md:text-sm tracking-wide">We'd love to hear from you</p>
+        {/* <p className="text-gray-400 text-xs md:text-sm tracking-wide">We'd love to hear from you</p> */}
       </div>
 
-      <div className="rounded-2xl border border-gray-800 bg-black/50 p-3 md:p-4">
+      <div className="rounded-2xl border border-gray-800 bg-black/50 p-0 md:p-4">
         <iframe
           data-tally-src="https://tally.so/embed/PdpYDV?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
           loading="lazy"

@@ -237,7 +237,7 @@ export const HomePage = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
                   >
-                  <h2 className="text-4xl md:text-6xl lg:text-9xl font-bold text-white mb-8 tracking-tighter ">
+                  <h2 className="text-5xl md:text-6xl lg:text-9xl font-bold text-white mb-8 tracking-tighter ">
                     Custom
                       <br />
                       AI for Your Enterprise
@@ -257,7 +257,7 @@ export const HomePage = () => {
                 <Section
                   key={work.id}
                   anchor={index === 0 ? 'WORK' : undefined}
-                  className="items-start md:items-center pt-10 md:pt-0"
+                  className="items-start md:items-center pt-0 md:pt-0"
                 >
                   <div className="group">
                     <div className="mb-8">
