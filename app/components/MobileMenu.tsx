@@ -37,7 +37,14 @@ export const MobileMenu = ({ isOpen, onClose, sections, currentSection, onSectio
           >
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between p-8 border-b border-white/10">
-                <h2 className="text-xl font-bold text-white tracking-tight">Menu</h2>
+                <a
+                  href="https://agile-app.eigenbird.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold tracking-tight text-white transition hover:border-white/40 hover:bg-white/10"
+                >
+                  Open App
+                </a>
                 <button
                   onClick={onClose}
                   className="text-white hover:text-gray-300 transition-colors"
@@ -80,9 +87,9 @@ export const MobileMenu = ({ isOpen, onClose, sections, currentSection, onSectio
                           <p className="text-white text-xs font-semibold">New Delhi, IND</p>
                         </div>
                   <div className="flex gap-4 pt-2">
-                    <a href="https://x.com/eigenbird" className="text-xs text-gray-500 hover:text-white transition-colors">Twitter</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://x.com/eigenbird" className="text-xs text-gray-500 hover:text-white transition-colors">Twitter</a>
                     {/* <a href="#" className="text-xs text-gray-500 hover:text-white transition-colors">Instagram</a> */}
-                    <a href="#" className="text-xs text-gray-500 hover:text-white transition-colors">LinkedIn</a>
+                    <a target="_blank" rel="noopener noreferrer" href="#" className="text-xs text-gray-500 hover:text-white transition-colors">LinkedIn</a>
                   </div>
                 </div>
               </div>

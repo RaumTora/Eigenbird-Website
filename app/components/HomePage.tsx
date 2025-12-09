@@ -195,12 +195,22 @@ export const HomePage = () => {
                   onSectionClick={scrollToSection}
                 />
               </div>
-              <button
-                onClick={() => setIsMobileMenuOpen(true)}
-                className="text-white text-sm tracking-widest hover:opacity-70 transition-opacity flex-shrink-0 md:hidden"
-              >
-                MENU
-              </button>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://agile-app.eigenbird.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden md:inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold tracking-tight text-white transition hover:border-white/40 hover:bg-white/10"
+                >
+                  Open App
+                </a>
+                <button
+                  onClick={() => setIsMobileMenuOpen(true)}
+                  className="text-white text-sm tracking-widest hover:opacity-70 transition-opacity flex-shrink-0 md:hidden"
+                >
+                  MENU
+                </button>
+              </div>
             </div>
           </div>
         </header>
@@ -245,6 +255,16 @@ export const HomePage = () => {
                     <p className="text-lg md:text-xl text-gray-400 max-w-2xl">
                      AI Intelligence Layer for Enterprise Data Unification
                     </p>
+                    <div className="mt-4 md:hidden">
+                      <a
+                        href="https://agile-app.eigenbird.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold tracking-tight text-white transition hover:border-white/40 hover:bg-white/10"
+                      >
+                        Open App
+                      </a>
+                    </div>
                   </motion.div>
                   {/* <div className="flex justify-end">
                     <DancingGirl targetWidth={420} targetHeight={420} />
