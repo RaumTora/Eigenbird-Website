@@ -17,22 +17,22 @@ export interface WorkItem {
 
 export const capabilities: Capability[] = [
   {
-    id: 'spatial-design',
+    id: 'Seamless Integration',
     number: '01',
-    title: 'Spatial Design',
-    description: 'Creating immersive digital environments that blur the line between 2D and 3D space.'
+    title: 'Seamless Integration',
+    description: 'Securely connects to all your project management tools.'
   },
   {
-    id: 'motion-systems',
+    id: 'Natural Language Chat',
     number: '02',
-    title: 'Motion Systems',
-    description: 'Developing fluid animation frameworks that respond to user interaction and scroll position.'
+    title: 'Natural Language Chat',
+    description: 'Ask complex questions in plain English, not in code.'
   },
   {
-    id: 'interactive-exp',
+    id: 'Real-Time Analysis',
     number: '03',
-    title: 'Interactive Experiences',
-    description: 'Building engaging web experiences that adapt and evolve based on user behavior.'
+    title: 'Real-Time Analysis',
+    description: 'Get instant status updates, risk assessments, and resource allocation reports.'
   },
   {
     id: 'creative-tech',
@@ -44,12 +44,12 @@ export const capabilities: Capability[] = [
 
 export const featuredWork: WorkItem[] = [
   {
-    id: 'kinetic-type',
+    id: 'Real-Time Analysis',
     number: '01',
-    title: 'Kinetic Typography',
+    title: 'Real-Time Analysis',
     category: 'Interactive Experience',
-    year: '2024',
-    description: 'Exploring the intersection of typography and motion through real-time WebGL animations.',
+    year: '2025',
+    description: 'Get instant status updates, risk assessments, and resource allocation reports.',
     image: 'https://images.pexels.com/photos/3394310/pexels-photo-3394310.jpeg'
   },
   // {
@@ -62,12 +62,12 @@ export const featuredWork: WorkItem[] = [
   //   image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg'
   // },
   {
-    id: 'spatial-interface',
+    id: 'Seamless Integration',
     number: '02',
-    title: 'Spatial Interface',
+    title: 'Seamless Integration',
     category: '3D Navigation',
-    year: '2024',
-    description: 'Reimagining user interfaces through three-dimensional space and movement.',
+    year: '2025',
+    description: 'Securely connects to all your project management tools.',
     image: 'https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg'
   }
 ];
