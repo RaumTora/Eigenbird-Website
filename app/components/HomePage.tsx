@@ -247,7 +247,7 @@ export const HomePage = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
                   >
-                  <h2 className="text-5xl md:text-6xl lg:text-9xl font-bold text-white mb-8 tracking-tighter ">
+                  <h2 className="text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-8 tracking-tighter ">
                     Custom
                       <br />
                       AI for Your Enterprise
