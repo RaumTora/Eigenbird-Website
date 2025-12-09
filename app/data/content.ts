@@ -49,7 +49,7 @@ export const featuredWork: WorkItem[] = [
     title: 'Real-Time Analysis',
     category: 'Interactive Experience',
     year: '2025',
-    description: 'Get instant status updates, risk assessments, and resource allocation reports.',
+    description: 'Get instant status updates, risk assessments, and resource allocation reports. Single source of truth, with answers grounded in your "actual" data, not guesses.',
     image: 'https://images.pexels.com/photos/3394310/pexels-photo-3394310.jpeg'
   },
   // {
@@ -65,9 +65,9 @@ export const featuredWork: WorkItem[] = [
     id: 'Seamless Integration',
     number: '02',
     title: 'Seamless Integration',
-    category: '3D Navigation',
+    category: 'RAG Integration',
     year: '2025',
-    description: 'Securely connects to all your project management tools.',
+    description: 'Securely connects to all your project management tools. Identify project risks, resource gaps, and bottlenecks before they become critical problems. ',
     image: 'https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg'
   }
 ];

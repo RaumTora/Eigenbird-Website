@@ -4,7 +4,7 @@ import { useRef, useEffect, useState, CSSProperties } from 'react';
 import { motion } from 'framer-motion';
 import { Section } from './Section';
 import { Navigation } from './Navigation';
-// import { ContactForm } from './ContactForm'; // No longer needed, replaced with raw JSX
+import { ContactForm } from './ContactForm';
 import { MobileMenu } from './MobileMenu';
 import { featuredWork } from '../data/content';
 import { Shader, ChromaFlow, Swirl } from "shaders/react"
@@ -238,12 +238,12 @@ export const HomePage = () => {
                     transition={{ duration: 0.8 }}
                   >
                     <h2 className="text-6xl md:text-4xl lg:text-9xl font-bold text-white mb-8 tracking-tighter ">
-                      Creative
+                    Custom
                       <br />
-                      Exploration
+                      AI for Your Enterprise
                     </h2>
                     <p className="text-lg md:text-xl text-gray-400 max-w-2xl">
-                      Digital design studio crafting immersive experiences
+                     AI Intelligence Layer for Enterprise Data Unification
                     </p>
                   </motion.div>
                   {/* <div className="flex justify-end">
@@ -289,11 +289,11 @@ export const HomePage = () => {
 
                     <div className="mb-6">
                       <p className="text-gray-400 text-xs mb-1">Email</p>
-                      <a href="mailto:hello@studio.com" className="text-white text-base">hello@studio.com</a>
+                      <a href="mailto:comms@eigenbird.com" className="text-white text-base">comms@eigenbird.com</a>
                     </div>
 
                     <div className="flex gap-6 text-xs text-gray-400 mb-10">
-                      <a href="#">Twitter</a>
+                      <a  target="_blank" rel="noopener noreferrer" href="https://x.com/eigenbird">Twitter</a>
                       <a href="#">LinkedIn</a>
                     </div>
 
@@ -315,7 +315,7 @@ export const HomePage = () => {
                   </div>
 
                   {/* DESKTOP */}
-                  <div className="hidden md:grid grid-cols-2 gap-24 p-12">
+                  <div className="hidden md:grid grid-cols-2 gap-24 p-12 items-start">
                     <div className="space-y-12">
                       <div>
                         <h2 className="text-6xl font-bold text-white mb-2 tracking-tighter">Let's talk</h2>
@@ -325,37 +325,21 @@ export const HomePage = () => {
                       <div className="space-y-8">
                         <div>
                           <p className="text-gray-400 mb-1 text-sm">Email</p>
-                          <a href="mailto:hello@studio.com" className="text-3xl font-semibold text-white">hello@studio.com</a>
+                          <a href="mailto:comms@eigenbird.com" className="text-3xl font-semibold text-white">comms@eigenbird.com</a>
                         </div>
                         <div>
                           <p className="text-gray-400 mb-1 text-sm">Location</p>
-                          <p className="text-white text-3xl font-semibold">New York, NY</p>
+                          <p className="text-white text-3xl font-semibold">New Delhi, IND</p>
                         </div>
                       </div>
 
-                      <div className="flex gap-6 text-gray-400 text-sm pt-6">
-                        <a href="#" className="hover:text-white">Twitter</a>
-
-                        <a href="#" className="hover:text-white">LinkedIn</a>
-
-                      </div>
+                    <div className="flex gap-6 text-gray-400 text-sm pt-6">
+                      <a target="_blank" rel="noopener noreferrer" href="https://x.com/eigenbird" className="hover:text-white">Twitter</a>
+                      <a href="#" className="hover:text-white">LinkedIn</a>
                     </div>
+                  </div>
 
-                    <form className="space-y-8">
-                      <div>
-                        <label className="text-sm text-gray-400 mb-2 block">Name</label>
-                        <input type="text" placeholder="Your name" className="w-full bg-transparent border-b border-gray-600 text-white py-3 text-lg" />
-                      </div>
-                      <div>
-                        <label className="text-sm text-gray-400 mb-2 block">Email</label>
-                        <input type="email" placeholder="your@email.com" className="w-full bg-transparent border-b border-gray-600 text-white py-3 text-lg" />
-                      </div>
-                      <div>
-                        <label className="text-sm text-gray-400 mb-2 block">Message</label>
-                        <textarea rows={3} placeholder="Tell us about your project…" className="w-full bg-transparent border-b border-gray-600 text-white py-3 text-lg resize-none"></textarea>
-                      </div>
-                      <button className="bg-white text-black font-semibold py-4 px-8 rounded-full text-lg">Send Message</button>
-                    </form>
+                  <ContactForm />
                   </div>
 
                 </div>

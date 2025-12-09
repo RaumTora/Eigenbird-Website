@@ -1,67 +1,42 @@
 'use client'
 
-import { useState } from 'react';
+import Script from 'next/script';
+import { useEffect } from 'react';
 
 export const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
+  // ensure embeds re-initialize on client navigation
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).Tally?.loadEmbeds) {
+      (window as any).Tally.loadEmbeds();
+    }
+  }, []);
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-2xl space-y-8">
-      <div className="space-y-2">
-        <label className="text-gray-400 text-sm tracking-widest block">
-          Name
-        </label>
-        <input
-          type="text"
-          value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          placeholder="Your name"
-          className="w-full bg-transparent border-b border-gray-700 text-white text-lg pb-2 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
-        />
-      </div>
+    <div className="w-full max-w-2xl space-y-6 rounded-3xl border border-gray-800/60 bg-black/40 p-6 shadow-lg shadow-black/40 backdrop-blur md:-mt-4">
+      <Script
+        src="https://tally.so/widgets/embed.js"
+        strategy="afterInteractive"
+        onLoad={() => (window as any).Tally?.loadEmbeds()}
+      />
 
       <div className="space-y-2">
-        <label className="text-gray-400 text-sm tracking-widest block">
-          Email
-        </label>
-        <input
-          type="email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          placeholder="your@email.com"
-          className="w-full bg-transparent border-b border-gray-700 text-white text-lg pb-2 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
-        />
+        <p className="text-white text-3xl md:text-4xl font-semibold leading-tight">Connect with us</p>
+        <p className="text-gray-400 text-sm tracking-wide">We'd love to hear from you</p>
       </div>
 
-      <div className="space-y-2">
-        <label className="text-gray-400 text-sm tracking-widest block">
-          Message
-        </label>
-        <textarea
-          value={formData.message}
-          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-          placeholder="Tell us about your project..."
-          rows={4}
-          className="w-full bg-transparent border-b border-gray-700 text-white text-lg pb-2 focus:outline-none focus:border-white transition-colors placeholder:text-gray-600 resize-none"
+      <div className="rounded-2xl border border-gray-800 bg-black/50 p-4">
+        <iframe
+          data-tally-src="https://tally.so/embed/PdpYDV?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="360"
+          frameBorder="0"
+          marginHeight={0}
+          marginWidth={0}
+          title="Contact form"
+          className="rounded-xl"
         />
       </div>
-
-      <button
-        type="submit"
-        className="w-full bg-white text-black py-4 rounded-full text-lg font-medium hover:opacity-90 transition-opacity"
-      >
-        Send Message
-      </button>
-    </form>
+    </div>
   );
 };
