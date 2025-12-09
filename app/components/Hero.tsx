@@ -10,7 +10,7 @@ export const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
         >
-          Creative experiences
+          Custom AI for Your Enterprise
           <br />
           in fluid motion
         </motion.h1>
@@ -21,8 +21,7 @@ export const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.33, 1, 0.68, 1] }}
         >
-          Transforming digital spaces with dynamic effects and real-time visual
-          experiences that captivate and inspire.
+          Custom AI Intelligence Layer for Enterprise Data Unification
         </motion.p>
       </div>
 
