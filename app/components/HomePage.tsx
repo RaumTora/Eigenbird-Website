@@ -261,7 +261,7 @@ export const HomePage = () => {
                 >
                   <div className="group">
                     <div className="mb-8">
-                      <span className="text-2xl font-light text-gray-600 mb-4 block">
+                      <span className="text-2xl font-light text-white mb-4 block">
                         {work.number}
                       </span>
                       <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">
