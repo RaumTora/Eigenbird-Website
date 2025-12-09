@@ -3,10 +3,10 @@ import { capabilities } from '../data/content';
 
 export const Capabilities = () => {
   return (
-    <section className="min-h-screen py-32 px-8 md:px-12">
+    <section className="min-h-screen py-20 md:py-32 px-8 md:px-12">
       <div className="max-w-7xl mx-auto">
         <motion.div 
-          className="mb-24"
+          className="mb-16 md:mb-24"
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}

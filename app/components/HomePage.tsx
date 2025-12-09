@@ -237,7 +237,7 @@ export const HomePage = () => {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
                   >
-                    <h2 className="text-6xl md:text-4xl lg:text-9xl font-bold text-white mb-8 tracking-tighter ">
+                  <h2 className="text-4xl md:text-6xl lg:text-9xl font-bold text-white mb-8 tracking-tighter ">
                     Custom
                       <br />
                       AI for Your Enterprise
@@ -254,7 +254,11 @@ export const HomePage = () => {
 
               {/* Your featuredWork map (Unchanged) */}
               {featuredWork.map((work, index) => (
-                <Section key={work.id} anchor={index === 0 ? 'WORK' : undefined}>
+                <Section
+                  key={work.id}
+                  anchor={index === 0 ? 'WORK' : undefined}
+                  className="items-start md:items-center pt-10 md:pt-0"
+                >
                   <div className="group">
                     <div className="mb-8">
                       <span className="text-2xl font-light text-gray-600 mb-4 block">
@@ -282,9 +286,13 @@ export const HomePage = () => {
                 <div className="w-full">
 
                   {/* MOBILE */}
-                  <div className="block md:hidden w-full min-h-screen px-6 pt-24 pb-12" style={{ maxWidth: 480, margin: '0 auto' }}>
-                    <div className="mb-10">
+                  <div className="block md:hidden w-full min-h-screen px-6 pt-20 pb-12" style={{ maxWidth: 480, margin: '0 auto' }}>
+                    <div className="mb-8">
                       <p className="text-gray-300 text-sm tracking-wide">/ Get in touch</p>
+                    </div>
+
+                    <div className="mb-8">
+                      <ContactForm variant="mobile" />
                     </div>
 
                     <div className="mb-6">
@@ -292,26 +300,10 @@ export const HomePage = () => {
                       <a href="mailto:comms@eigenbird.com" className="text-white text-base">comms@eigenbird.com</a>
                     </div>
 
-                    <div className="flex gap-6 text-xs text-gray-400 mb-10">
+                    <div className="flex gap-6 text-xs text-gray-400">
                       <a  target="_blank" rel="noopener noreferrer" href="https://x.com/eigenbird">Twitter</a>
                       <a href="#">LinkedIn</a>
                     </div>
-
-                    <form className="flex flex-col gap-6">
-                      <div>
-                        <label className="text-gray-400 text-xs mb-1 block">Name</label>
-                        <input type="text" placeholder="Your name" className="w-full bg-transparent border-b border-gray-600 text-white py-2 text-sm" />
-                      </div>
-                      <div>
-                        <label className="text-gray-400 text-xs mb-1 block">Email</label>
-                        <input type="email" placeholder="your@email.com" className="w-full bg-transparent border-b border-gray-600 text-white py-2 text-sm" />
-                      </div>
-                      <div>
-                        <label className="text-gray-400 text-xs mb-1 block">Message</label>
-                        <textarea placeholder="Tell us about your project…" rows={2} className="w-full bg-transparent border-b border-gray-600 text-white py-2 text-sm resize-none"></textarea>
-                      </div>
-                      <button type="submit" className="w-full bg-white text-black py-3 rounded-full text-sm font-semibold">Send Message</button>
-                    </form>
                   </div>
 
                   {/* DESKTOP */}
